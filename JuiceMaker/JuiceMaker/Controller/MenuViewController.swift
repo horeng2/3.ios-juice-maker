@@ -6,7 +6,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MenuViewController: UIViewController {
     private var juiceMaker = JuiceMaker()
 
     @IBOutlet private var stockOfStrawberryLabel: UILabel!
@@ -106,9 +106,9 @@ class ViewController: UIViewController {
     
     private func moveToEditViewController() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let editViewController: EditFruitStockViewController = storyboard.instantiateViewController(identifier: "EditViewController")
-        editViewController.configure(fruitStore: juiceMaker.fruitStore)
-        let navigationController = UINavigationController(rootViewController: editViewController)
+        let editStockViewController: EditStockViewController = storyboard.instantiateViewController(identifier: "EditStockViewController")
+        editStockViewController.configure(fruitStore: juiceMaker.fruitStore)
+        let navigationController = UINavigationController(rootViewController: editStockViewController)
         navigationController.modalPresentationStyle = .fullScreen
         present(navigationController, animated: true, completion: nil)
     }

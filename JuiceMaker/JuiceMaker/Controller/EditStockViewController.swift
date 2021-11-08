@@ -1,6 +1,6 @@
 import UIKit
 
-class EditFruitStockViewController: UIViewController {
+class EditStockViewController: UIViewController {
     private var fruitStore: FruitStore?
     
     @IBOutlet private var stockOfStrawberryLabel: UILabel!
