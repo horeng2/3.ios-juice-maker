@@ -10,7 +10,7 @@
 - 끝나는 시간 : ~ 오후 10시
 - 쉬는 날 : 수, 토, 일
 
-## **🌊 Step 0 - FlowChart**
+## **🌊 FlowChart**
 
 ![](https://i.imgur.com/tTh4Fu8.jpg)
 
