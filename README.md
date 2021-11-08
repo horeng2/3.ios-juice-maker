@@ -15,7 +15,7 @@
 ![](https://i.imgur.com/tTh4Fu8.jpg)
 
 
-## 📍구현사항 (간단하게)
+## 📍구현사항
 
 - model
     - FruitStore
