@@ -15,9 +15,36 @@ class MenuViewController: UIViewController {
     @IBOutlet private var stockOfKiwiLabel: UILabel!
     @IBOutlet private var stockOfMangoLabel: UILabel!
     
+    @IBOutlet weak var orderOfStrawberryBananaJuice: UIButton!
+    @IBOutlet weak var orderOfMangoKiwiJuice: UIButton!
+    @IBOutlet weak var orderOfStrawberryJuice: UIButton!
+    @IBOutlet weak var orderOfBananaJuice: UIButton!
+    @IBOutlet weak var orderOfPineappleJuice: UIButton!
+    @IBOutlet weak var orderOfKiwiJuice: UIButton!
+    @IBOutlet weak var orderOfMangoJuice: UIButton!
+    
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateStockLabel()
+        setAccessibility()
+    }
+    
+    func setAccessibility() {
+        orderOfStrawberryBananaJuice.titleLabel?.adjustsFontForContentSizeCategory = true
+        orderOfMangoKiwiJuice.titleLabel?.adjustsFontForContentSizeCategory = true
+        orderOfStrawberryJuice.titleLabel?.adjustsFontForContentSizeCategory = true
+        orderOfBananaJuice.titleLabel?.adjustsFontForContentSizeCategory = true
+        orderOfPineappleJuice.titleLabel?.adjustsFontForContentSizeCategory = true
+        orderOfKiwiJuice.titleLabel?.adjustsFontForContentSizeCategory = true
+        orderOfMangoJuice.titleLabel?.adjustsFontForContentSizeCategory = true
+        
+        stockOfStrawberryLabel.adjustsFontForContentSizeCategory = true
+        stockOfBananaLabel.adjustsFontForContentSizeCategory = true
+        stockOfPineappleLabel.adjustsFontForContentSizeCategory = true
+        stockOfKiwiLabel.adjustsFontForContentSizeCategory = true
+        stockOfMangoLabel.adjustsFontForContentSizeCategory = true
     }
     
     private func updateStockLabel() {
