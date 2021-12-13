@@ -19,11 +19,17 @@ class EditStockViewController: UIViewController {
         configureNavigationButton()
         updateStockLabel()
         updateStepperValue()
+        setAccessibilityToStepper()
     }
     
     private func configureNavigationButton() {
         navigationItem.title = "재고 추가"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "닫기", style: .done, target: self, action: #selector(hitDoneButton))
+    }
+    
+    private func setAccessibilityToStepper() {
+        strawberryStepper.accessibilityLabel = "야곰야곰야곰"
+
     }
     
     @objc
